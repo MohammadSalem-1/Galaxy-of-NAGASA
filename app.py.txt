@@ -1,0 +1,13 @@
+from flask import Flask, render_template, request
+
+# ≈‰‘«¡ «· ÿ»Ìﬁ
+app = Flask(__name__)
+
+# «·’›Õ… «·—∆Ì”Ì…
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+#  ‘€Ì· «· ÿ»Ìﬁ
+if __name__ == '__main__':
+    app.run(debug=True)
